@@ -3,12 +3,18 @@ package general;
 
 import java.util.ArrayList;
 
+/**
+ * This class provides a bunch of general purpose tools for Java. Currently, the majority of these tools relate to
+ * arrays and sorting, but I plan to add more in the future.
+ * @author Andrej
+ * @since Mar 29, 2024
+ */
 public class Tools {
 
     /**
      * Passes through entire array once and moves each element to a random index.
      *
-     * @param arr
+     * @param arr An array of {@link Object}s to be shuffled.
      */
     public static void shuffle(Object[] arr) {
         Object current;
@@ -19,12 +25,13 @@ public class Tools {
             arr[i] = arr[rand];
             arr[rand] = current;
         }
+
     }
 
     /**
      * Passes through entire array once and moves each element to a random index.
      *
-     * @param arr
+     * @param arr An array of ints to be shuffled.
      */
     public static void shuffle(int[] arr) {
         int current;
@@ -40,7 +47,7 @@ public class Tools {
     /**
      * Passes through entire array once and moves each element to a random index.
      *
-     * @param arr
+     * @param arr An array of doubles to be shuffled.
      */
     public static void shuffle(double[] arr) {
         double current;
