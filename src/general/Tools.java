@@ -116,6 +116,12 @@ public class Tools {
 
     }
 
+    /**
+     * Moves the selected integer in an array to a new position.
+     * @param arr The target array
+     * @param index The current index of the selected integer
+     * @param newIndex The new index to move the selected integer to.
+     */
     public static void moveTo(int[] arr, int index, int newIndex) {
         int value = arr[index];
         if (index < newIndex) {
@@ -132,6 +138,13 @@ public class Tools {
         arr[newIndex] = value;
     }
 
+    /**
+     * Returns an array of pseudorandom integers in a given range.
+     * @param amount The size of the array to be generated
+     * @param min The minimum value of any element in the array
+     * @param max The maximum value of any element in the array
+     * @return An array of pseudorandom integers in the range from min to max.
+     */
     public static int[] randomInts(int amount, int min, int max) {
         int[] out = new int[amount];
         for (int i = 0; i < amount; i++) {
@@ -167,6 +180,11 @@ public class Tools {
         }
     }
 
+    /**
+     * Checks an array of integers to see if it is sorted in rising order.
+     * @param arr The array to be examined
+     * @return True if sorted, false otherwise
+     */
     public static boolean isSorted(int[] arr) {
 
         for (int i = 1; i < arr.length; i++) {
@@ -183,8 +201,8 @@ public class Tools {
     /**
      * Merges two sorted arrays of integers into one sorted array
      *
-     * @param a
-     * @param b
+     * @param a An array of integers
+     * @param b Another array of integers
      * @return A single sorted array
      */
     public static int[] merge(int[] a, int[] b) {
