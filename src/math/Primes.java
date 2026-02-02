@@ -1,5 +1,8 @@
 package math;
 
+/**
+ * This class includes a number of methods related to prime numbers.
+ */
 public class Primes {
     /**
      * Prints all primes from 0 to n (inclusive) to {@link System#out System.out} on separate lines.
