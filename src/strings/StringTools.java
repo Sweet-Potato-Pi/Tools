@@ -1,10 +1,21 @@
 package strings;
 
 public class StringTools {
+    /**
+     * Returns a single character (as a {@link String}) from a {@link String} at some index.
+     * @param s the {@link String} from which to retrieve.
+     * @param index the index of the character to be retrieved.
+     * @return the character at the specified index in {@link s}
+     */
     public static String getChar(String s, int index) {
         return s.substring(index, index + 1);
     }
 
+    /**
+     * Reverses the order of a {@link String}.
+     * @param s the {@link String} to be reversed.
+     * @return the reversed {@link String}
+     */
     public static String reverse(String s) {
         String out = "";
 
@@ -14,6 +25,12 @@ public class StringTools {
         return out;
     }
 
+    /**
+     * Counts how many instances of a character there are in a {@link String}.
+     * @param s the target {@link String}.
+     * @param character the character to count.
+     * @return the number of occurences of this character.
+     */
     public static int countChars(String s, String character) {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
