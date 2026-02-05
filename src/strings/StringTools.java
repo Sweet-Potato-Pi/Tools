@@ -1,5 +1,8 @@
 package strings;
 
+/**
+ * General tools for Strings.
+ */
 public class StringTools {
     /**
      * Returns a single character (as a {@link String}) from a {@link String} at some index.
