@@ -22,12 +22,12 @@ public class Primes {
     }
 
     /**
-     * Returns a truth value representing whether or not a given integer is prime.
+     * Returns a truth value representing whether or not a given positive integer is prime.
      * @param n the integer being evaluated.
      * @return true if n is prime, false otherwise.
      * @throws IllegalArgumentException If n is negative.
      */
-    public static boolean isPrime(int n) {
+    public static boolean isPrime(int n) throws IllegalArgumentException {
         if (n < 0) {
             throw new IllegalArgumentException("The argument n must be a positive integer");
         }
