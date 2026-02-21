@@ -1,7 +1,9 @@
 package math;
 
 /**
- * This class includes a number of methods related to prime numbers.
+ * This class includes a number of methods related to prime numbers. The algorithms used by these methods are not
+ * exactly the most efficient so use with caution. More efficient algorithms may be implemented in the future but no
+ * such plans are currently in place.
  */
 public class Primes {
     /**
@@ -11,6 +13,7 @@ public class Primes {
      * while. Specifically, a preliminary test showed that for n = 10,000,000 the program took approximately one hour to
      * finish.
      * </p>
+     *
      * @param n the upper bound that you wish to print to.
      */
     public static void printPrimes(int n) {
@@ -23,6 +26,7 @@ public class Primes {
 
     /**
      * Returns a truth value representing whether or not a given positive integer is prime.
+     *
      * @param n the integer being evaluated.
      * @return true if n is prime, false otherwise.
      * @throws IllegalArgumentException If n is negative.
@@ -37,6 +41,7 @@ public class Primes {
     /**
      * A private method used internally which lacks the fail-safe mechanism of the public method {@link #isPrime(int)},
      * thus making it slightly faster.
+     *
      * @param n the int to evaluate
      * @return a boolean representing whether or not n is prime
      */
