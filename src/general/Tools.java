@@ -106,14 +106,14 @@ public class Tools {
      * @param index1 the first element's index.
      * @param index2 the other element's index.
      */
-    public static void swap(ArrayList list, int index1, int index2) {
+    public static void swap(ArrayList<Object> list, int index1, int index2) {
         Object val = list.get(index1);
         list.set(index1, list.get(index2));
         list.set(index2, val);
     }
 
     public static void insert(int[] arr, int val, int index) {
-
+        //TODO: implement insert(int[] arr, int val, in index)
     }
 
     /**
