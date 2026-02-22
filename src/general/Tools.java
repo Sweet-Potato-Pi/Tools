@@ -61,11 +61,11 @@ public class Tools {
     }
 
     /**
-     * Swaps the elements of an array "arr" at the indexes index1 and index2
+     * Swaps the elements of an array "arr" at the indexes index1 and index2.
      *
-     * @param arr
-     * @param index1
-     * @param index2
+     * @param arr the target {@link String} array.
+     * @param index1 the first element's index.
+     * @param index2 the other element's index.
      */
     public static void swap(String[] arr, int index1, int index2) {
         String val = arr[index1];
@@ -76,9 +76,9 @@ public class Tools {
     /**
      * Swaps the elements of an array "arr" at the indexes index1 and index2
      *
-     * @param arr
-     * @param index1
-     * @param index2
+     * @param arr the target int array.
+     * @param index1 the first element's index.
+     * @param index2 the other element's index.
      */
     public static void swap(int[] arr, int index1, int index2) {
         int val = arr[index1];
@@ -89,9 +89,9 @@ public class Tools {
     /**
      * Swaps the elements of an array "arr" at the indexes index1 and index2
      *
-     * @param arr
-     * @param index1
-     * @param index2
+     * @param arr the target array of doubles.
+     * @param index1 the first element's index.
+     * @param index2 the other element's index.
      */
     public static void swap(double[] arr, int index1, int index2) {
         double val = arr[index1];
@@ -100,11 +100,11 @@ public class Tools {
     }
 
     /**
-     * Swaps the elements of an ArrayList "list" at the indexes index1 and index2
+     * Swaps the elements of an {@link ArrayList} at the indexes index1 and index2
      *
-     * @param list
-     * @param index1
-     * @param index2
+     * @param list the target {@link ArrayList}.
+     * @param index1 the first element's index.
+     * @param index2 the other element's index.
      */
     public static void swap(ArrayList list, int index1, int index2) {
         Object val = list.get(index1);
