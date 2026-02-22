@@ -26,6 +26,8 @@ public class Delimiter extends SpecialDelimiter{
     public int length() {
         return super.openLength();
     }
+
+    @Override
     public int tokenAmount(String s) {
         int count = 0;
         String current = s.substring(0,length());

@@ -60,14 +60,26 @@ public class SpecialDelimiter {
         closeDelim = Character.toString(delimiter);
     }
 
+    /**
+     * Returns the character length of the opening delimiter. This is done with the {@link String#length()} function.
+     * @return the number of characters that make up the opening delimiter.
+     */
     public int openLength() {
         return open().length();
     }
 
+    /**
+     * Returns the character length of the closing delimiter. This is done with the {@link String#length()} function.
+     * @return the number of characters that make up the closing delimiter.
+     */
     public int closeLength() {
         return close().length();
     }
 
+    /**
+     * Fetches the opening delimiter as a {@link String}.
+     * @return the opening delimiter; the string that signals the beginning of a token.
+     */
     public String open() {
         return openDelim;
     }
