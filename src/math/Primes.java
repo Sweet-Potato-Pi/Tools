@@ -4,6 +4,8 @@ package math;
  * This class includes a number of methods related to prime numbers. The algorithms used by these methods are not
  * exactly the most efficient so use with caution. More efficient algorithms may be implemented in the future but no
  * such plans are currently in place.
+ * @author Andrej Coleman
+ * @since January 23, 2026
  */
 public class Primes {
     /**
