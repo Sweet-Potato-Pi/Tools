@@ -18,7 +18,23 @@ public class Node<E> {
         this(data, null, null);
     }
 
-    public void set(E newData) {
+    //Non-Static Methods
+
+    /**
+     * This method can be used to check what kind of sentinel, if any, a node is.
+     * @return 0 for a header sentinel. 1 for a tail sentinel. -1 for any other node.
+     */
+    public int isSentinel() {
+        if (this.previous == null && this.next != null) {
+            return 0;
+        } else if (this.next == null && this.previous != null) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+
+    public void setData(E newData) {
         this.data = newData;
     }
 
