@@ -1,7 +1,11 @@
 package lists;
 
 /**
- * This class defines a linked list object which contains data of some type {@link E}. Linked lists like this store data in a chain-like configuration where the only way to get an object at a certain index is to iterate along the chain of previous {@link Node Nodes}.
+ * This class defines a linked list object which contains data of some type {@link E}. Linked lists like this store
+ * data in a chain-like configuration where the only way to get an object at a certain index is to iterate along the
+ * chain of previous {@link Node Nodes}.
+ * @author Andrej Coleman
+ * @since February 27, 2026
  */
 public class LinkedList<E> {
     private Node<E> head;
