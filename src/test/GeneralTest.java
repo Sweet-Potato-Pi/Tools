@@ -1,17 +1,20 @@
 package test;
 
-import general.Tools;
+import general.Sorting;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * For testing any of the tools in this project.
  */
 public class GeneralTest {
     public static void main(String[] args) {
-        String[] s = new String[]{"a","b","c","d","e"};
-        Tools.shuffle(s);
-        for (String a : s) {
-            System.out.println(a);
-        }
+        System.out.println("Start");
+        ArrayList<Integer> list;
+        list = new ArrayList<>(Arrays.asList(2,457,2,68,12,6,82,6,82,45,82,56,81,46,2,486,2));
+        Sorting.quicksortInPlace(list, 0, list.size() - 1);
+        System.out.println(list);
     }
     
 }

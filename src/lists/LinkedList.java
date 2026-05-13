@@ -10,7 +10,14 @@ public class LinkedList<E> {
 
     public LinkedList(Node<E> head, Node<E> tail, int size) {
         this.head = head;
+        head.setNext(tail);
         this.tail = tail;
+        tail.setPrevious(head);
+
+        Node<E> current = head;
+        for (int i = 0; i < size; i++) {
+            this.add(new Node<>(null));
+        }
         this.size = size;
     }
 
